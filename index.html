@@ -306,7 +306,7 @@
       </div>
       <div class="contact-item">
         <div class="contact-item-icon">✉️</div>
-        <div class="contact-item-text"><strong>E-Mail</strong><span><a href="mailto:nelvin@kontakt.de" style="color:inherit;">nelvin@kontakt.de</a></span></div>
+        <div class="contact-item-text"><strong>E-Mail</strong><span><a href="mailto:info@nelvin-entrümpelung.de" style="color:inherit;">info@nelvin-entrümpelung.de</a></span></div>
       </div>
       <div class="contact-item">
         <div class="contact-item-icon">📍</div>
@@ -314,27 +314,37 @@
       </div>
       <div class="contact-item">
         <div class="contact-item-icon">🕐</div>
-        <div class="contact-item-text"><strong>Erreichbarkeit</strong><span>Mo–Sa, 7:00 – 20:00 Uhr</span></div>
+        <div class="contact-item-text"><strong>Erreichbarkeit</strong><span>Mo–Sa, 9:00 – 20:00 Uhr</span></div>
       </div>
     </div>
-    <div class="contact-form">
-      <input type="text" placeholder="Ihr Name"/>
-      <input type="tel" placeholder="Telefonnummer"/>
-      <input type="email" placeholder="E-Mail-Adresse"/>
-      <select>
-        <option value="" disabled selected>Welche Leistung benötigen Sie?</option>
-        <option>Haushaltsauflösung</option>
-        <option>Wohnungsentrümpelung</option>
-        <option>Keller / Dachboden</option>
-        <option>Gewerberäume</option>
-        <option>Gartenräumung</option>
-        <option>Sonstiges</option>
-      </select>
-      <textarea placeholder="Kurze Beschreibung (Größe, Ort, Besonderheiten...)"></textarea>
-      <button class="btn btn-primary" onclick="alert('Vielen Dank! Wir melden uns bald.')">Anfrage absenden</button>
-    </div>
-  </div>
-</section>
+  <form class="contact-form" action="https://formsubmit.co/info@nelvin-entrümpelung.de" method="POST">
+
+  <input type="text" name="name" placeholder="Ihr Name" required />
+
+  <input type="tel" name="telefon" placeholder="Telefonnummer" />
+
+  <input type="email" name="email" placeholder="E-Mail-Adresse" required />
+
+  <select name="leistung" required>
+    <option value="" disabled selected>Welche Leistung benötigen Sie?</option>
+    <option>Haushaltsauflösung</option>
+    <option>Wohnungsentrümpelung</option>
+    <option>Keller / Dachboden</option>
+    <option>Gewerberäume</option>
+    <option>Gartenräumung</option>
+    <option>Sonstiges</option>
+  </select>
+
+  <textarea name="beschreibung" placeholder="Kurze Beschreibung (Größe, Ort, Besonderheiten...)"></textarea>
+
+  <input type="hidden" name="_subject" value="Neue Anfrage über die Website" />
+  <input type="hidden" name="_captcha" value="false" />
+
+  <button type="submit" class="btn btn-primary">
+    Anfrage absenden
+  </button>
+
+</form>
 
 <!-- FOOTER -->
 <footer>
